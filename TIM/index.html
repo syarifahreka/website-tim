@@ -5,6 +5,13 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script type = "text/javascript">
+function fun() {
+prompt ("apa yang anda butuhkan", "ketik disini");
+}
+</script>
+
 </head>
 <body>
     <div class="container">
@@ -12,14 +19,20 @@
            <div class="logo">
               TOKO KOMPUTER
            </div>
+           <p id="demo"></p>
        </header>
+
+
        <nav>
             <ul>
                 <li><a href="index.html">Beranda</a></li>
-                <li><a href="kontak-saya.html">Kontak</li>
+                <li><a href="form.html">form</li>
+                <li><a href="produk.html">form</li>
                 <li><a href="tentang-saya.html">Tentang</a></li>
             </ul>
         </nav>
+        
+
        <article>
            <div class="konten">
             <img src="gambar/ASUS.png" ></a>
@@ -65,9 +78,12 @@
            <p>Konektifitas  HDMI, USB 3.2 Gen 1 Type-A Ports x 2, USB 3.2 Gen 2 Type-A Ports x 1, USB 3.2 Gen 2 Type-C Ports x 1</p>
            </div>
       </article>
-  
+ 
        <footer>
-            Muhid - Reka
+        <form>
+            <input type = "button" value = "Klik Untuk Memasukkan Nama Barang Yang Anda Cari" onclick = "fun();" />
+        </form><br><br>
+            <p><font face="arial">Muhid - Reka</font></p>
        </footer>
     </div>
 </body>
