@@ -1,52 +1,50 @@
-
-
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
-    background: lightcoral;
+    background: #ffffff;
     padding: 0;
-    margin:0;
-    
+    margin: 0;
 }
 
-.container{
-    width: 65%;
-    height: auto;
-    background: white;
-    margin:auto;
-    margin-top: 5px;
+.container {
+    width: 1200 px;
+    background: #D2E1E6;
+    margin: auto;
     padding-bottom: 5px;
 }
-.logo {
-    font-size: xx-large;
-    padding: 30px 0 30px 10px;
+
+.title {
+    display: block;
+    margin: auto;
+    width: 500px;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #1a75ff;
-    border: 1px solid gainsboro;
+.navbar {
+    float: left;
+    background: #4F77AA;
+    width: 100%;
 }
 
 nav li {
+    list-style-type: none;
     float: left;
 }
 
-nav li a{
-    display: inline-block;
-    color:#ffffff;
-    text-align: center;
+nav li a {
+    display: block;
+    color: #ffffff;
     padding: 14px 15px;
     text-decoration: none;
 }
 
 nav li a:hover {
-    opacity:0.9;
-    background-color: #3385ff;
+    opacity: 0.9;
+    background-color: #78AED3;
 }
 
+ul {
+    width: fit-content;
+    margin: auto;
+}
 
 article {
     width: 98.8%;
@@ -59,8 +57,9 @@ article {
 
 article p {
     padding: 5px 6px 5px 5px;
-    line-height: 1.5;  
+    line-height: 1.5;
 }
+
 article .konten {
     width: 23.5%;
     height: auto;
@@ -78,15 +77,18 @@ article .isi {
     border: 1px solid gainsboro;
     float: left;
 }
+
 article .isi .judul {
     font-size: xx-large;
     margin-bottom: 10px;
     margin-left: 10px;
     margin-top: 10px;
 }
+
 article .isi p {
     margin-top: 0;
 }
+
 article .isi img {
     float: left;
     margin: 5px 5px 5px 5px;
@@ -96,21 +98,39 @@ article .konten img {
     width: 95.8%;
     height: 150px;
     margin: 5px 5px 5px 5px;
-
 }
+
 article .konten:hover {
-    opacity:0.9;
-
+    opacity: 0.9;
 }
+
 article .konten .judul a {
     margin-left: 5px;
     text-decoration: none;
-    font-size:x-large;
-    color:#020101;
+    font-size: x-large;
+    color: #020101;
 }
 
 article .konten a:hover {
-    opacity:0.9;
+    opacity: 0.9;
+}
+
+.kotak-tentang {
+    position: relative;
+    margin-left: 50px;
+    margin-top: 50px;
+    width: 1000px;
+    padding: auto;
+    height: 250px;
+    border: 1px solid #AAC9DD;
+}
+
+.kotak-tentang img {
+    float: left;
+}
+
+.kotak-tentang p {
+    margin-top: 70px;
 }
 
 footer {
@@ -122,5 +142,221 @@ footer {
     border-radius: 3px;
     border-bottom: 1px solid gainsboro;
     padding-top: 15px;
-    padding-bottom: 15px;  
+    padding-bottom: 15px;
+    position: absolute;
+}
+
+.about {
+    background-color: #fff;
+    padding: 90px 0;
+}
+
+.about .titlepage {
+    text-align: left;
+}
+
+.about .titlepage h2 {
+    max-width: inherit;
+    border: inherit;
+}
+
+.about .titlepage p {
+    padding: 30px 0;
+}
+
+img.kanan {
+    float: right;
+    margin: 5px;
+    width: 200px;
+    height: 200px;
+}
+
+.titlepage {
+    padding-bottom: 60px;
+    margin-left: 30px;
+}
+
+.titlepage h2 {
+    font-size: 40px;
+    color: #090807;
+    line-height: 55px;
+    font-weight: bold;
+    padding: 0;
+    text-transform: uppercase;
+    border-bottom: #48ca95 solid 1px;
+    max-width: 315px;
+    margin: auto;
+}
+
+.d_flex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.read_more {
+    font-size: 17px;
+    background-color: #48ca95;
+    color: #fff !important;
+    padding: 13px 0px;
+    width: 100%;
+    max-width: 190px;
+    text-align: center;
+    display: inline-block;
+    transition: ease-in all 0.5s;
+    font-weight: 500;
+}
+
+.read_more:hover {
+    background: #000;
+    color: #fff;
+    transition: ease-in all 0.5s;
+}
+
+footer {
+    clear: both;
+    position: relative;
+    height: 40px;
+    margin-top: -40px;
+    background-color: #D2E1E6;
+    padding: 10px;
+    text-align: center;
+}
+
+footer .footer {
+    font-family: arial;
+}
+
+
+
+
+  
+.container2 {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+  
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"] {
+  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+  
+#contact {
+  background: #F9F9F9;
+  padding: 25px;
+  margin: 150px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+  
+#contact h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+  
+#contact h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+}
+  
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+  
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+  
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+  
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+  
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #4CAF50;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+  
+#contact button[type="submit"]:hover {
+  background: #43A047;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+  
+#contact button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+  
+.copyright {
+  text-align: center;
+}
+  
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+  
+::-webkit-input-placeholder {
+  color: #888;
+}
+  
+:-moz-placeholder {
+  color: #888;
+}
+  
+::-moz-placeholder {
+  color: #888;
+}
+  
+:-ms-input-placeholder {
+  color: #888;
+}
+  
+.notify {
+    padding: 10px;
+    background-color: #FFD76E;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    font-weight: bold;
 }

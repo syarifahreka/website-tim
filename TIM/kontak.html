@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kontak</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        <header>
+            <img src="gambar/title.png" class="title">
+        </header>
+    </div>
+
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="produk.html">Produk</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+        </ul>
+    </nav>
+
+    <div class="container2">
+        <form id="contact" action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
+            <?php if(!empty($notify)){ ?>
+                <p class="notify <?php echo !empty($notifyClass)?$notifyClass:''; ?>"><?php echo $notify; ?></p>
+            <?php } ?>
+            <h3>Contact Form</h3>
+            <h4>Hubungi kami dengan mengisi isian dibawah</h4>
+            <fieldset>
+                <input placeholder="Nama Anda" type="text" name="name" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Email Anda" type="text" name="email" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Subject (optional)" type="text" name="subject" tabindex="4" required>
+            </fieldset>
+            <fieldset>
+                <textarea placeholder="Ketikan pesan Anda" name="message" tabindex="5" required></textarea>
+            </fieldset>
+            <fieldset>
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Mengirim pesan">Kirim</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <footer>
+        <p class="footer">Muhid_&_Reka</p>
+    </footer>
+</body>
+
+</html>

@@ -1,90 +1,109 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+
     <title>Beranda</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <script type = "text/javascript">
-function fun() {
-prompt ("apa yang anda butuhkan", "ketik disini");
-}
-</script>
+   <style type="text/css">
+      
+      .utama{
+       width: 100%;
+       overflow: hidden;
+      }.isi{
+       width: 50%;
+       height: 100%;
+       margin: auto;
+       overflow: hidden;
+      }.isi_gambar{
+       width: 25%; 
+       float: left;
+      }.isi2{
+       width: 400%;
+       
+      }
+      .utama img{
+       width: 100%;
+       float: left;
+      }
+    </style>
 
 </head>
+
 <body>
-    <div class="container">
-       <header>
-           <div class="logo">
-              TOKO KOMPUTER
-           </div>
-           <p id="demo"></p>
-       </header>
+
+    <div id="kotak-besar">
+        <div class="container">
+            <header>
+                <img src="gambar/title.png" class="title">
+            </header>
+        </div>
 
 
-       <nav>
+        <nav class="navbar">
             <ul>
                 <li><a href="index.html">Beranda</a></li>
-                <li><a href="form.html">form</li>
-                <li><a href="produk.html">form</li>
-                <li><a href="tentang-saya.html">Tentang</a></li>
+                <li><a href="produk.html">Produk</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+                <li><a href="tentang.html">Tentang</a></li>
             </ul>
         </nav>
-        
 
-       <article>
-           <div class="konten">
-            <img src="gambar/ASUS.png" ></a>
-            <div class="judul">
-                <a href="**">Asus Vivobook</a>
-            </div>
-           <p>Intel® Core™ i3-10110U Processor 2.1 GHz (4M Cache, up to 4.1 GHz)</p>
-           <p>8GB DDR3</p>
-           <p>512GB M.2 NVMe™ PCIe® 3.0 SSD</p>
-           <p>NVIDIA® GeForce® MX350 , 2GB GDDR5</p>
-           <p>Windows 10 Home - ASUS recommends Windows 10 Pro for business</p>
-           </div>
-           <div class="konten">
-            <img src="gambar/Lenovo.png" ></a>
-            <div class="judul">
-             <a href="**">Lenovo Ideapad Slim 3</a>
-         </div>
-           <p>Prosesor AMD Ryzen 3 4300U quad-core (4 thread) dengan kecepatan 2,7GHz Turbo maksimal 3,7GHz</p>
-           <p>Grafis AMD Radeon RX Vega 5 iGPU</p>
-           <p>Memori RAM 8GB DDR4-2666MHz (4GB onboard + 4GB SODIMM) upgradeable up to 12GB</p>
-           <p>Storage SSD 512GB M.2 PCIe 3.0 x2 2242 NVMe</p>
-           <p>Windows 10 Home x64 + Microsoft Office Home and Student 2019</p>
-           </div>
-           <div class="konten">
-            <img src="gambar/HP2.png" ></a>
-            <div class="judul">
-             <a href="**">HP Pavilion 15</a>
-         </div>
-           <p>Processor AMD Ryzen™ 5 5600H clock boost hingga 4,2 GHz</p>
-           <p>RAM   RAM 16 GB DDR4-3200 MHz (2 x 8 GB)</p>
-           <p>SSD   512 GB</p>
-           <p>Grafis    NVIDIA® GeForce RTX™ 3050</p>
-           </div>
-           <div class="konten">
-            <img src="gambar/ACER.png" ></a>
-            <div class="judul">
-             <a href="**">Acer Nitro 5</a>
-         </div>
-           <p>Processor AMD Ryzen 7</p>
-           <p>RAM   16 GB</p>
-           <p>Penyimpanan   512 GB SSD</p>
-           <p>4 cells battery, 10 jam pemakaian</p>
-           <p>Konektifitas  HDMI, USB 3.2 Gen 1 Type-A Ports x 2, USB 3.2 Gen 2 Type-A Ports x 1, USB 3.2 Gen 2 Type-C Ports x 1</p>
-           </div>
-      </article>
- 
-       <footer>
-        <form>
-            <input type = "button" value = "Klik Untuk Memasukkan Nama Barang Yang Anda Cari" onclick = "fun();" />
-        </form><br><br>
-            <p><font face="arial">Muhid - Reka</font></p>
-       </footer>
+    <div class="utama">
+        <div class="isi">
+            <div class="isi2" id="slide">
+                <div class="isi_gambar" >
+                    <img id="slide" src="gambar/ACER.png">
+                </div>
+                <div class="isi_gambar">
+                    <img id="slide" src="gambar/aspire3.jpg">
+                </div>
+                <div class="isi_gambar">
+                    <img id="slide" src="gambar/zenbook.jpg">
+                </div>
+                <div class="isi_gambar">
+                    <img id="slide" src="gambar/HP2.png">
+                </div>
+            </div>  
+        </div>
     </div>
+
+    <script type="text/javascript">
+        var a=-100;
+        setInterval(function(){
+            if (a!=0) {
+                slide = document.getElementById('slide');
+                slide.style="margin-left:"+a+"%;transition: 1s ease-in;";
+                if (a== -300) {
+                    a=0;
+                }
+                else{
+                a=a+-100;
+                }
+                return a;
+
+            }
+            else{
+                slide = document.getElementById('slide');
+                slide.style="margin-left:"+a+"%;";
+                if (a== -300) {
+                    a=0;
+                }
+                else{
+                    a=a+-100;
+                }
+                return a;
+            }
+        }, 2000);
+    </script>
+
+    <footer>
+        <p class="footer">Muhid_&_Reka</p>
+    </footer>
+
 </body>
+
 </html>
